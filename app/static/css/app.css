@@ -5,24 +5,34 @@ body {
 footer  {
     padding-top: 20px;
 }
-.news__list{
-     border-style:solid outset outset outset;
-     border-radius: 5px;
-     border-top-color:#1fe24b;
-     padding-right: 20px;
-     padding-bottom: 20px;
-     font-size: 20px;
-     text-align: center;
-     width:400px; 
-}
-    
-}
-.news{
-    display: grid;
-    grid-template-colums:auto auto auto;
+.news__list{ 
+    display: grid;  
+    grid-template-columns: 300px 300px 300px;
+    grid-columns-gap: 10px;  
+    grid-row-gap: 10px;
     background-color: white;
-    padding: 10px;
+    list-style-type: none; 
+    padding: 10px;  
+    margin: 5px;
 }
+  
 .center{
      text-align: center;
+}
+.home{
+     text-align: center;
+}
+.new_item{ 
+    display:inline-block;
+    border-style:solid outset outset outset;
+     border-radius: 5px;
+     border-top-color:#1fe24b;
+     font-size: 14px;
+     word-wrap: break-word;
+     text-align: center;
+     background-color: white;  
+     float:left;
+     height:430px; 
+     margin: 30px 10px; 
+     
 }
