@@ -51,7 +51,7 @@ const NewsList=Vue.component('news-list',{
                  </div>
             </div>
             <div class="news">
-                <h2 class=center>News</h2>
+                <h2 class="center">News</h2>
                  <ul class="news__list">
                     <li v-for="article in articles"class="news__item" >
                      <div class="new_item">
@@ -61,14 +61,14 @@ const NewsList=Vue.component('news-list',{
                      {{article.description}} 
                      </div>
                     </li>
-                <ul>
+                </ul>
                
             </div>
             </div>
           `,
     created: function(){
         let self =this;
-        fetch('https://newsapi.org/v2/top-headlines?country=us&apikey=')
+        fetch('https://newsapi.org/v2/top-headlines?country=us&apikey=fd87643e1c184ea4952cd80da24e8543')
         .then(function(response){
             return response.json();
         })
@@ -87,7 +87,7 @@ const NewsList=Vue.component('news-list',{
          searchNews: function() {
          let self = this;
          fetch('https://newsapi.org/v2/everything?q='+
-        self.searchTerm + '&language=en&apiKey=')
+        self.searchTerm + '&language=en&apiKey=fd87643e1c184ea4952cd80da24e8543')
          .then(function(response) {
          return response.json();
          })
